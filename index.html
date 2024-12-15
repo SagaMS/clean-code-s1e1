@@ -11,51 +11,51 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg">
-      <a class="more_inf"
+    <div class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg">
+      <a class="header__link"
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >
         Want more details?
       </a>
     </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task" type="text">
+    <div class="main">
+      <p id="items-adding">
+        <label for="item-new">Add Item</label>
+        <div class="add-item">
+          <input id="item-new" class="add-item__input" type="text">
           <button>Add</button>
         </div>
       </p>
       <h3>Todo</h3>
-      <ul id="incompleteTasks">
-        <li>
+      <ul class="items-list" id="items-incomplete">
+        <li class="list-item">
           <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="list-item__label">Pay Bills</label>
+          <input type="text" class="list-item__input">
+          <button class="list-item__edit-btn">Edit</button>
+          <button class="list-item__delete-btn">
             <img src="./remove.svg">
           </button>
         </li>
-        <li class="editMode">
+        <li class="list-item list-item_edited">
           <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="go shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
+          <label  class="list-item__label">Go Shopping</label>
+          <input type="text" value="Go shopping" class="list-item__input">
+          <button class="list-item__edit-btn">Save</button>
+          <button class="list-item__delete-btn">
             <img src="./remove.svg">
           </button>
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
+      <ul class="items-list" id="items-completed">
+        <li class="list-item">
           <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="list-item__label">See the Doctor</label>
+          <input type="text" class="list-item__input">
+          <button class="list-item__edit-btn">Edit</button>
+          <button class="list-item__delete-btn">
             <img src="./remove.svg">
           </button>
         </li>
