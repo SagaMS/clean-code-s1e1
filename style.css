@@ -1,5 +1,5 @@
 /* Basic Style */
-.header, .main{
+.header, .main {
   background-color: #f8f8f8;
   color: #333;
   font-family: "Lato", sans-serif;
@@ -33,7 +33,7 @@
 }
 .list-item__label,
 .add-item__input,
-.list-item__input-text{
+.list-item__input-text {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -44,12 +44,12 @@
 }
 
 .items-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .main__inside-header, .list-item {
-  list-style:none;
+  list-style: none;
 }
 
 .add-item__input
@@ -58,7 +58,7 @@
 .list-item__input-text
 .list-item__edit-btn
 .list-item__delete-btn {
-  outline:none;
+  outline: none;
 }
 
 .add-item__btn,
@@ -128,11 +128,11 @@
   align-items: center;
 }
 
-.list-item  > * {
+.list-item > * {
   vertical-align: middle;
 }
 
-.list-item  > .list-item__input-check {
+.list-item > .list-item__input-check {
   margin: 0 10px;
 }
 
@@ -165,14 +165,14 @@
 
 /* Edit Task */
 .list-item__input-text {
-  display:none;
+  display: none;
 } 
 
-.list-item_edited .list-item__input-text{
-  display:inline-block;
-  width:224px;
+.list-item_edited .list-item__input-text {
+  display: inline-block;
+  width: 224px;
 }
 
 .list-item_edited .ist-item__label {
-  display:none;
+  display: none;
 }
