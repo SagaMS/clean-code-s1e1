@@ -20,43 +20,43 @@
       </a>
     </div>
     <div class="main">
-      <p id="items-adding">
-        <label for="item-new">Add Item</label>
+      <p class="adding-block" id="items-adding">
+        <label class="adding-block__label" for="item-new">Add Item</label>
         <div class="add-item">
-          <input id="item-new" class="add-item__input" type="text">
-          <button>Add</button>
+          <input class="add-item__input add-item__input_item-new" id="item-new" type="text">
+          <button class="add-item__btn">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
+      <h3 class="main__inside-header">Todo</h3>
       <ul class="items-list" id="items-incomplete">
         <li class="list-item">
-          <input type="checkbox">
+          <input class="list-item__input-check" type="checkbox">
           <label class="list-item__label">Pay Bills</label>
-          <input type="text" class="list-item__input">
+          <input class="list-item__input-text" type="text">
           <button class="list-item__edit-btn">Edit</button>
           <button class="list-item__delete-btn">
-            <img src="./remove.svg">
+            <img class="delete-image" src="./remove.svg">
           </button>
         </li>
         <li class="list-item list-item_edited">
-          <input type="checkbox">
-          <label  class="list-item__label">Go Shopping</label>
-          <input type="text" value="Go shopping" class="list-item__input">
+          <input class="list-item__input-check" type="checkbox">
+          <label class="list-item__label">Go Shopping</label>
+          <input class="list-item__input-text" type="text" value="Go shopping">
           <button class="list-item__edit-btn">Save</button>
           <button class="list-item__delete-btn">
-            <img src="./remove.svg">
+            <img class="delete-image" src="./remove.svg">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="main__inside-header">Completed</h3>
       <ul class="items-list" id="items-completed">
         <li class="list-item">
-          <input type="checkbox" checked>
-          <label class="list-item__label">See the Doctor</label>
-          <input type="text" class="list-item__input">
+          <input class="list-item__input-check" type="checkbox" checked>
+          <label class="list-item__label list-item__label_completed">See the Doctor</label>
+          <input class="list-item__input-text" type="text">
           <button class="list-item__edit-btn">Edit</button>
           <button class="list-item__delete-btn">
-            <img src="./remove.svg">
+            <img class="delete-image" src="./remove.svg">
           </button>
         </li>
       </ul>

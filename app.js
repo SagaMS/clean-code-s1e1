@@ -17,6 +17,16 @@ var completedTasksHolder=document.getElementById("items-completed");//completed-
 //New task list item
 var createNewTaskElement=function(taskString){
 
+//     <li class="list-item list-item_edited">
+//     <input class="list-item__input-check" type="checkbox">
+//     <label class="list-item__label">Go Shopping</label>
+//     <input class="list-item__input-text" type="text" value="Go shopping">
+//     <button class="list-item__edit-btn">Save</button>
+//     <button class="list-item__delete-btn">
+//       <img class="delete-image" src="./remove.svg">
+//     </button>
+//   </li>
+
     var listItem=document.createElement("li");
 
     //input (checkbox)
@@ -32,13 +42,16 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.classList = 'list-item';    
+
     label.innerText=taskString;
     label.className='list-item__label';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className = "list-item__input-check"
     editInput.type="text";
-    editInput.className="list-item__input";
+    editInput.className="list-item__input-text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="list-item__edit-btn";
@@ -84,8 +97,8 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".list-item__edit-btn");
-    var containsClass=listItem.classList.contains("list-item_edited");
+    var editBtn=listItem.querySelector("button.list-item__edit-btn");
+    var containsClass=listItem.classList.contains("button.list-item_edited");
     //If class of the parent is .editmode
     if(containsClass){
 
