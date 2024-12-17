@@ -179,6 +179,6 @@
   width: 224px;
 }
 
-.list-item_edited .ist-item__label {
+.list-item_edited .list-item__label {
   display: none;
 }
